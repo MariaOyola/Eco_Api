@@ -33,7 +33,7 @@ public class AnimalController {
     @GetMapping("")
  @JsonView(View.basic.class)
     public ResponseEntity<Object>findAll() {
-        List<AnimalResponseDto> Animal = service.findAll(); 
+        List<AnimalResponseDto> Animal = service.findAll()
         return new ResponseEntity<> (Animal, HttpStatus.OK); 
 
 
