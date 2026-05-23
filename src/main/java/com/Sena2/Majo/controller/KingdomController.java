@@ -34,7 +34,7 @@ public class KingdomController {
     @GetMapping("")
     @JsonView(View.basic.class)
     public ResponseEntity<Object>findAll() {
-        List<KingdomResponseDto> kingdom = service.findAll(); 
+        List<KingdomResponseDto> kingdom = service.findAll()
     return new ResponseEntity<>(kingdom, HttpStatus.OK); 
 
 
